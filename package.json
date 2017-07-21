@@ -1,0 +1,32 @@
+{
+  "name": "lincoln-transformer",
+  "version": "0.0.1",
+  "description": "Transforms OpenAPI documents into a format for Lincoln.",
+  "author": "Brendan Abbott",
+  "license": "MIT",
+  "keywords": [
+    "lincoln"
+  ],
+  "scripts": {
+    "build": "rm -rf dist/ && tsc",
+    "lint": "tslint -p tsconfig.json --type-check -c tslint.json",
+    "test": "jest",
+    "test:coverage": "jest --coverage --coverageReporters text text-summary",
+    "preversion": "yarn lint && yarn build && yarn test"
+  },
+  "dependencies": {
+    "oai-ts-core": "^0.2.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^20.0.4",
+    "jest": "^20.0.4",
+    "ts-jest": "^20.0.7",
+    "tslint": "^5.5.0",
+    "tslint-config-temando": "^1.1.4",
+    "typescript": "^2.4.2"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "alwaysStrict": true,
+    "declaration": true,
+    "downlevelIteration": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noUnusedLocals": true,
+    "outDir": "./dist",
+    "pretty": true,
+    "target": "es6",
+    "strict": true
+  },
+  "include": [
+    "./src/**/*"
+  ],
+  "exclude": [
+    "./src/__tests__/*",
+    "node_modules"
+  ]
+}
